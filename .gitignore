@@ -1,0 +1,22 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+*.bak
+*.tmp
+.idea/
+.vscode/
+
+# Claude / local config
+.claude/settings.local.json
+
+# Node (if a module ever adds a build step)
+node_modules/
+package-lock.json
+
+# Generated sitemap files (never committed)
+/sitemap.xml
+/sitemap-*.xml
+
+# Compiled translations are committed (.mo), source caches are not
+*.mo~

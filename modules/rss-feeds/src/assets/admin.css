@@ -1,0 +1,194 @@
+/**
+ * YJ19 RSS Feeds — Admin Styles
+ * استایل پنل تنظیمات RSS (داخل wp-admin)
+ */
+
+.yj19-rss-wrap {
+    max-width: 1100px;
+}
+
+/* ---------- بخش راهنما ---------- */
+.yj19-rss-help {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-right: 4px solid #2271b1;
+    padding: 16px 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.yj19-rss-help h2 {
+    margin: 0 0 12px 0;
+    font-size: 16px;
+    color: #1d2327;
+    border-bottom: 1px solid #f0f0f1;
+    padding-bottom: 8px;
+}
+
+.yj19-rss-help-content p {
+    margin: 10px 0;
+    line-height: 1.8;
+    color: #3c434a;
+}
+
+.yj19-rss-help-content strong {
+    color: #1d2327;
+    display: inline-block;
+    margin-left: 4px;
+}
+
+.yj19-rss-help-urls {
+    background: #f6f7f7;
+    padding: 12px 16px;
+    border-radius: 4px;
+    margin-top: 14px;
+}
+
+.yj19-rss-help-urls ul {
+    margin: 8px 0 8px 20px;
+    list-style: disc;
+}
+
+.yj19-rss-help-urls li {
+    margin: 4px 0;
+    line-height: 1.8;
+}
+
+.yj19-rss-help-urls code {
+    background: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    border: 1px solid #dcdcde;
+    direction: ltr;
+    display: inline-block;
+}
+
+/* ---------- جدول post typeها ---------- */
+.yj19-rss-table {
+    margin-top: 16px;
+}
+
+.yj19-rss-table th,
+.yj19-rss-table td {
+    padding: 12px 14px;
+    vertical-align: middle;
+}
+
+.yj19-rss-table .column-toggle {
+    width: 70px;
+    text-align: center;
+}
+
+.yj19-rss-table .column-name {
+    width: 22%;
+}
+
+.yj19-rss-table .column-slug {
+    width: 18%;
+}
+
+.yj19-rss-table .column-slug code {
+    background: #f0f0f1;
+    padding: 2px 8px;
+    border-radius: 3px;
+    direction: ltr;
+    display: inline-block;
+}
+
+.yj19-rss-table .column-url {
+    word-break: break-all;
+}
+
+.yj19-rss-table .column-url a {
+    direction: ltr;
+    display: inline-block;
+    font-size: 12px;
+    color: #2271b1;
+    text-decoration: none;
+}
+
+.yj19-rss-table .column-url a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Toggle Switch ---------- */
+.yj19-rss-switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.yj19-rss-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.yj19-rss-slider {
+    position: absolute;
+    inset: 0;
+    background-color: #ccc;
+    border-radius: 24px;
+    transition: background-color 0.25s ease;
+}
+
+.yj19-rss-slider::before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    right: 3px;
+    bottom: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.25s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.yj19-rss-switch input:checked + .yj19-rss-slider {
+    background-color: #2271b1;
+}
+
+.yj19-rss-switch input:checked + .yj19-rss-slider::before {
+    transform: translateX(-20px);
+}
+
+.yj19-rss-switch input:focus + .yj19-rss-slider {
+    box-shadow: 0 0 0 2px #2271b144;
+}
+
+/* ---------- وضعیت ذخیره‌سازی ---------- */
+.yj19-rss-status {
+    display: inline-block;
+    margin-right: 12px;
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+.yj19-rss-status.is-saving {
+    color: #646970;
+}
+
+.yj19-rss-status.is-success {
+    color: #008a20;
+}
+
+.yj19-rss-status.is-error {
+    color: #d63638;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 782px) {
+    .yj19-rss-table .column-url {
+        font-size: 11px;
+    }
+
+    .yj19-rss-table th,
+    .yj19-rss-table td {
+        padding: 10px 8px;
+    }
+}

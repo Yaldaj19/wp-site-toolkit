@@ -1,0 +1,366 @@
+/**
+ * Admin Components Styles
+ * 
+ * Related Files:
+ * - admin/assets/admin-layout.css
+ * - admin/views/tabs.php
+ */
+
+/*-------------------------------*/
+/* Toggle Switch */
+.ssg-toggle {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.ssg-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.ssg-toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.25s ease;
+  border-radius: 26px;
+}
+
+.ssg-toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.25s ease;
+  border-radius: 50%;
+}
+
+.ssg-toggle input:checked + .ssg-toggle-slider {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.ssg-toggle input:checked + .ssg-toggle-slider:before {
+  transform: translateX(24px);
+}
+
+.ssg-toggle input:focus + .ssg-toggle-slider {
+  box-shadow: 0 0 1px #667eea;
+}
+
+/*-------------------------------*/
+/* Item Card */
+.ssg-item-card {
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  transition: all 0.15s ease;
+}
+
+.ssg-item-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/*-------------------------------*/
+/* Item Header */
+.ssg-item-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 15px;
+}
+
+.ssg-item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.ssg-item-info h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.ssg-item-meta {
+  font-size: 13px;
+  color: #6c757d;
+}
+
+.ssg-item-meta a {
+  color: #667eea;
+  text-decoration: none;
+}
+
+.ssg-item-meta a:hover {
+  text-decoration: underline;
+}
+
+/*-------------------------------*/
+/* Toggle Settings Button */
+.ssg-toggle-settings {
+  background: #f5f7fa;
+  border: 1px solid #e9ecef;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #2c3e50;
+  transition: all 0.15s ease;
+}
+
+.ssg-toggle-settings:hover {
+  background: #667eea;
+  color: #fff;
+  border-color: #667eea;
+}
+
+/*-------------------------------*/
+/* Item Settings Panel */
+.ssg-item-settings {
+  background: #f5f7fa;
+  padding: 20px;
+  border-top: 1px solid #e9ecef;
+  animation: slideDown 0.25s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+  }
+}
+
+.ssg-item-settings .form-table {
+  margin: 0;
+}
+
+.ssg-item-settings th {
+  width: 150px;
+  padding: 10px 0;
+}
+
+.ssg-item-settings td {
+  padding: 10px 0;
+}
+
+/*-------------------------------*/
+/* Loading Spinner */
+.ssg-loading {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #667eea;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*-------------------------------*/
+/* Success Flash */
+.ssg-flash-success {
+  animation: flashSuccess 2s ease;
+}
+
+@keyframes flashSuccess {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+/*-------------------------------*/
+/* Priority Colors */
+input[type="number"][name*="[priority]"] {
+  width: 70px;
+}
+
+input[type="number"][name*="[priority]"][value="1.0"],
+input[type="number"][name*="[priority]"][value="0.9"],
+input[type="number"][name*="[priority]"][value="0.8"] {
+  border-color: #46b450;
+}
+
+input[type="number"][name*="[priority]"][value="0.7"],
+input[type="number"][name*="[priority]"][value="0.6"],
+input[type="number"][name*="[priority]"][value="0.5"] {
+  border-color: #f0b849;
+}
+
+input[type="number"][name*="[priority]"][value="0.4"],
+input[type="number"][name*="[priority]"][value="0.3"],
+input[type="number"][name*="[priority]"][value="0.2"],
+input[type="number"][name*="[priority]"][value="0.1"] {
+  border-color: #ccc;
+}
+
+/*-------------------------------*/
+/* Select Dropdown */
+select {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+  color: #2c3e50;
+}
+
+select:focus {
+  border-color: #667eea;
+  outline: none;
+  box-shadow: 0 0 0 1px #667eea;
+}
+
+/*-------------------------------*/
+/* Textarea */
+textarea.code {
+  font-family: Consolas, Monaco, monospace;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/*-------------------------------*/
+/* Checkbox & Radio */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-left: 0;
+}
+
+/*-------------------------------*/
+/* Notice Inline */
+.notice.inline {
+  margin: 20px 0;
+  padding: 12px;
+}
+
+/*-------------------------------*/
+/* Guide Specific Styles */
+.ssg-guide-content {
+  direction: rtl;
+  text-align: right;
+}
+
+.ssg-guide-content ul,
+.ssg-guide-content ol {
+  padding-right: 20px;
+  padding-left: 0;
+}
+
+.ssg-guide-content code {
+  direction: ltr;
+  display: inline-block;
+}
+
+.ssg-guide-content table {
+  direction: rtl;
+}
+
+/*-------------------------------*/
+/* Empty State */
+.ssg-empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #6c757d;
+}
+
+.ssg-empty-state h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.ssg-empty-state p {
+  margin-bottom: 20px;
+}
+
+/*-------------------------------*/
+/* Badge */
+.ssg-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.ssg-badge-success {
+  background: #d4edda;
+  color: #155724;
+}
+
+.ssg-badge-warning {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.ssg-badge-info {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+/*-------------------------------*/
+/* Divider */
+.ssg-divider {
+  height: 1px;
+  background: #e9ecef;
+  margin: 30px 0;
+}
+
+/*-------------------------------*/
+/* Helper Classes */
+.ssg-mt-0 {
+  margin-top: 0 !important;
+}
+.ssg-mt-10 {
+  margin-top: 10px !important;
+}
+.ssg-mt-20 {
+  margin-top: 20px !important;
+}
+.ssg-mb-0 {
+  margin-bottom: 0 !important;
+}
+.ssg-mb-10 {
+  margin-bottom: 10px !important;
+}
+.ssg-mb-20 {
+  margin-bottom: 20px !important;
+}
+.ssg-text-center {
+  text-align: center !important;
+}
+.ssg-text-right {
+  text-align: right !important;
+}
+.ssg-text-muted {
+  color: #6c757d !important;
+}

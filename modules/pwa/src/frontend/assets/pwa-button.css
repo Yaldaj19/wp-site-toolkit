@@ -1,0 +1,185 @@
+/* YJ19 PWA Install Button — Frontend */
+.yj19-pwa-install-btn {
+    position: fixed;
+    inset-block-end: 20px;
+    z-index: 9998;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
+    color: #fff;
+    background: #F37021;
+    border-radius: 14px;
+    box-shadow: 0 8px 22px -6px rgba(0,0,0,.25);
+    transition: transform .2s ease, opacity .25s ease;
+    transform: translateY(20px);
+    opacity: 0;
+    pointer-events: none;
+    direction: rtl;
+    font-family: inherit;
+    line-height: 1;
+}
+
+.yj19-pwa-install-btn[data-position="bottom-right"]  { inset-inline-end: 18px; }
+.yj19-pwa-install-btn[data-position="bottom-left"]   { inset-inline-start: 18px; }
+.yj19-pwa-install-btn[data-position="bottom-center"] { left: 50%; transform: translateX(-50%) translateY(20px); }
+
+.yj19-pwa-install-btn[data-style="glass"] {
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border: 1px solid rgba(255,255,255,.4);
+}
+
+.yj19-pwa-install-btn.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+.yj19-pwa-install-btn[data-position="bottom-center"].is-visible {
+    transform: translateX(-50%) translateY(0);
+}
+
+.yj19-pwa-install-btn:hover {
+    filter: brightness(1.05);
+}
+.yj19-pwa-install-btn:active {
+    transform: translateY(2px);
+}
+.yj19-pwa-install-btn[data-position="bottom-center"]:active {
+    transform: translateX(-50%) translateY(2px);
+}
+
+.yj19-pwa-install-btn__icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: currentColor;
+    -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>') center / contain no-repeat;
+            mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>') center / contain no-repeat;
+    flex-shrink: 0;
+}
+
+.yj19-pwa-install-btn__icon[data-custom="1"] {
+    background: var(--yj19-pwa-icon-bg) center / contain no-repeat;
+    -webkit-mask: none;
+            mask: none;
+    width: 22px;
+    height: 22px;
+}
+
+.yj19-pwa-install-btn__icon--svg {
+    background: transparent !important;
+    -webkit-mask: none !important;
+            mask: none !important;
+    width: 22px;
+    height: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+}
+.yj19-pwa-install-btn__icon--svg > svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: inherit;
+    fill: currentColor;
+}
+.yj19-pwa-install-btn__icon--svg > svg [stroke="currentColor"] {
+    stroke: currentColor;
+}
+
+.yj19-pwa-install-btn__text {
+    white-space: nowrap;
+}
+
+.yj19-pwa-install-btn__close {
+    margin-inline-start: 6px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: rgba(0,0,0,.15);
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .15s;
+    padding: 0;
+}
+.yj19-pwa-install-btn__close:hover {
+    background: rgba(0,0,0,.25);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .yj19-pwa-install-btn { transition: opacity .15s; }
+}
+
+/* ===== Inline variants (sidebar / navbar / header) ===== */
+.yj19-pwa-install-btn--inline {
+    position: static !important;
+    inset: auto !important;
+    transform: none !important;
+    z-index: auto;
+    opacity: 1;
+    pointer-events: auto;
+    margin: 0;
+}
+
+.yj19-pwa-install-btn--inline.is-visible {
+    transform: none !important;
+    animation: none;
+}
+
+.yj19-pwa-install-btn--sidebar {
+    display: flex;
+    width: calc(100% - 24px);
+    margin: 16px 12px;
+    justify-content: center;
+    font-size: 15px;
+    padding: 14px 16px;
+}
+
+.yj19-pwa-install-btn--navbar {
+    flex-direction: column;
+    gap: 4px;
+    padding: 6px 10px;
+    font-size: 11px;
+    border-radius: 8px;
+    box-shadow: none !important;
+}
+.yj19-pwa-install-btn--navbar .yj19-pwa-install-btn__icon {
+    width: 22px;
+    height: 22px;
+}
+.yj19-pwa-install-btn--navbar .yj19-pwa-install-btn__close {
+    display: none;
+}
+
+.yj19-pwa-install-btn--header {
+    padding: 8px 14px;
+    font-size: 13px;
+    border-radius: 10px;
+    margin-inline-start: 6px;
+}
+.yj19-pwa-install-btn--header .yj19-pwa-install-btn__close {
+    display: none;
+}
+
+/* Pulse attention on first appear */
+@keyframes yj19PwaPulse {
+    0%   { box-shadow: 0 8px 22px -6px rgba(0,0,0,.25), 0 0 0 0 rgba(243,112,33,.5); }
+    70%  { box-shadow: 0 8px 22px -6px rgba(0,0,0,.25), 0 0 0 12px rgba(243,112,33,0); }
+    100% { box-shadow: 0 8px 22px -6px rgba(0,0,0,.25), 0 0 0 0 rgba(243,112,33,0); }
+}
+.yj19-pwa-install-btn.is-visible {
+    animation: yj19PwaPulse 2.2s ease-out 1;
+}

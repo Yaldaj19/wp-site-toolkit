@@ -1,0 +1,261 @@
+# Copyright (C) 2024 Developer
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: SEO Sitemap Generator 1.0.0\n"
+"Report-Msgid-Bugs-To: https://developer.developer\n"
+"POT-Creation-Date: 2024-01-01 00:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-01-01 00:00+0000\n"
+"Last-Translator: Developer\n"
+"Language-Team: Developer\n"
+
+#: admin/views/tabs.php
+msgid "Homepage Settings"
+msgstr ""
+
+#: admin/views/tabs.php
+msgid "Enable Homepage"
+msgstr ""
+
+#: admin/views/tabs.php
+msgid "Priority"
+msgstr ""
+
+#: admin/views/tabs.php
+msgid "Change Frequency"
+msgstr ""
+
+#: admin/views/tabs.php
+msgid "Post Types Settings"
+msgstr ""
+
+#: admin/views/tabs.php
+msgid "Taxonomies Settings"
+msgstr ""
+
+#: admin/views/tabs.php
+msgid "Authors Settings"
+msgstr ""
+
+#: admin/views/tabs.php
+msgid "Date Archives Settings"
+msgstr ""
+
+#: admin/views/tabs.php
+msgid "WooCommerce Settings"
+msgstr ""
+
+#: admin/views/tabs.php
+msgid "Advanced Settings"
+msgstr ""
+
+#: includes/helpers.php
+msgid "Always"
+msgstr ""
+
+#: includes/helpers.php
+msgid "Hourly"
+msgstr ""
+
+#: includes/helpers.php
+msgid "Daily"
+msgstr ""
+
+#: includes/helpers.php
+msgid "Weekly"
+msgstr ""
+
+#: includes/helpers.php
+msgid "Monthly"
+msgstr ""
+
+#: includes/helpers.php
+msgid "Yearly"
+msgstr ""
+
+#: includes/helpers.php
+msgid "Never"
+msgstr ""
+
+#: includes/helpers.php
+msgid "Auto"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "SEO Sitemap Generator"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "SEO Sitemap"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Saving..."
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Settings saved successfully!"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Error occurred. Please try again."
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Clearing cache..."
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Cache cleared successfully!"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Rebuilding sitemap..."
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Sitemap rebuilt successfully!"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Pinging search engines..."
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Search engines pinged successfully!"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Are you sure?"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Permission denied."
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Version %s"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Homepage"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Post Types"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Taxonomies"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Authors"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Dates"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "WooCommerce"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Advanced"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Guide"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Save Settings"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Clear Cache"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Rebuild Sitemap"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Statistics"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Mode:"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Dynamic"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Static"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Total Sitemaps:"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Total URLs:"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Cache Size:"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Quick Links"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "View Main Sitemap"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "View robots.txt"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Google Search Console"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Bing Webmaster Tools"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Quick Actions"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Ping Search Engines"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Export Settings"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Import Settings"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Support"
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Need help? Check our guide or contact support."
+msgstr ""
+
+#: admin/views/dashboard.php
+msgid "Read Guide"
+msgstr ""

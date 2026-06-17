@@ -1,0 +1,16 @@
+# IDE
+.idea/
+.vscode/
+
+# Playwright
+.playwright-mcp/
+playwright-profile/
+
+# System
+.DS_Store
+Thumbs.db
+nul
+
+# Temp files
+*.log
+*.tmp

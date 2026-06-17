@@ -1,0 +1,55 @@
+# Copyright (C) 2026 Yalda Jahanshahi
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Site Toolkit 1.0.0\n"
+"Report-Msgid-Bugs-To: yaldaj.619@gmail.com\n"
+"Language-Team: Yalda Jahanshahi <yaldaj.619@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: wp-site-toolkit\n"
+
+#. Core: top-level admin menu label
+msgid "ابزارهای سایت"
+msgstr ""
+
+#. Core: dashboard submenu (full)
+msgid "داشبورد ابزارها"
+msgstr ""
+
+#. Core: dashboard submenu (short)
+msgid "داشبورد"
+msgstr ""
+
+#. Core: plugin action link
+msgid "ابزارها"
+msgstr ""
+
+#. Dashboard: subtitle
+msgid "مجموعه ابزارهای سایت در یک پنل واحد و ماژولار. هر ابزار رو از کارت زیر باز کن."
+msgstr ""
+
+#. Dashboard: open module button
+msgid "باز کردن"
+msgstr ""
+
+#. Dashboard: module active badge
+msgid "فعال"
+msgstr ""
+
+#. Dashboard: module failed-to-load badge
+msgid "بارگذاری نشد"
+msgstr ""
+
+#. Dashboard card: PWA title
+msgid "PWA — وب‌اپ نصب‌شونده"
+msgstr ""
+
+#. Dashboard card: RSS title
+msgid "RSS / فیدها"
+msgstr ""
+
+#. Dashboard card: Sitemap title
+msgid "نقشه سایت (Sitemap)"
+msgstr ""
