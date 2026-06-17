@@ -4,6 +4,11 @@
 >
 > یک افزونه‌ی ماژولار وردپرس که سه ابزار ضروری سایت — **PWA**، **فیدهای RSS** و **نقشه‌ی سایت XML** — را در یک پنل مدیریت واحد و قابل‌توسعه گرد هم می‌آورد.
 
+![status](https://img.shields.io/badge/status-in%20development-orange) ![version](https://img.shields.io/badge/version-1.0.0-blue) ![license](https://img.shields.io/badge/license-GPL--2.0--or--later-green)
+
+> 🚧 **In active development** — the three modules work today; the modular core is built to keep adding more tools over time.
+> 🚧 **در حال توسعه‌ی فعال** — هر سه ماژول الان کار می‌کنند؛ هسته‌ی ماژولار طوری ساخته شده که ابزارهای بیشتری به‌مرور اضافه شوند.
+
 [English](#english) · [فارسی](#فارسی)
 
 ---
